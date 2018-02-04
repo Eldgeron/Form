@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*GENERAL*/
+html {
+  background-color: #BADAF5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  padding: 0 10vw;
+  color: #7691B2;
+}
+/*FONTS*/
+h1{
+  font-size: 2em;
+}
+/*HEADER*/
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(13% - 4px);
+  padding: 1.5em 0 1.5em 0;
+}
+
+.logo_title{
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+nav{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: calc(87% - 4px);
+}
+
+
+.main_nav a {
+  text-transform: uppercase;
+  margin: 0 0.3em;
+  padding: 0.3em;
+  color: #7691B2;
+  text-decoration: none;
+}
+
+.main_nav a:hover {
+  background-color: #fff;
+  color: #7691B2;
+}
+
+@media screen and (max-width: 50em) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/*MAIN*/
+
+/*side_bar*/
+.content_wrap{
+  background: #fff;
+  padding: 0 2em;
+  color: #7691B2;
+}
+
+.main_title_wrap {
+  padding: 2em 0;
+  border-bottom: 2px solid #7691B2;
+  margin-bottom: 2em;
+}
+
+.main_title {
+  text-transform: uppercase;
+}
+
+section {
+  display: inline-block;
+  vertical-align: top;
+
+}
+.side_bar{
+  width: calc(35% - 36px);
+  margin-right: 32px;
+}
+
+.side_bar *{
+  margin-bottom: 2em;
+}
+
+h2.decor {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  line-height: 2.2em;
+  background-color: #B21715;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+h2.decor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25.6px 0 25.6px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+h2.decor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25.6px 20px 25.6px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.side_bar p{
+  line-height: 1.2em;
+}
+
+/*form_bar*/
+fieldset {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 4px);
+}
+
+.form_bar {
+  width: calc(65% - 4px);
+}
+
+.form_bar *{
+  margin-bottom: 2em;
+}
+
+.form_bar label {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 2px;
+  font-weight: 600;
+}
+
+.form_bar input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.form_bar textarea {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+fieldset.ini {
+  margin-right: 2em;
+  width: calc(50% - 36px);
+}
+
+a.button {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #7691B2;
+  color: #fff;
+  line-height: 2.2em;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #7691B2;
+  box-sizing: border-box;
+
+}
+
+a.button:hover {
+  border: 2px solid #7691B2;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #7691B2;
+}
